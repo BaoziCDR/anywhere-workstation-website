@@ -1,0 +1,16 @@
+{
+  "name": "anywhere-workstation-website",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/preview.mjs"
+  },
+  "devDependencies": {
+    "vitepress": "1.6.4"
+  }
+}

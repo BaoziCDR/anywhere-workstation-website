@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>常见问题 · AnyWhere WorkStation</title>
+<meta name="i18n-title" data-zh="常见问题 · AnyWhere WorkStation" data-en="FAQ · AnyWhere WorkStation">
+<meta name="description" content="关于 AnyWhere WorkStation 的常见问题。" data-zh="关于 AnyWhere WorkStation 的常见问题。" data-en="Frequently asked questions about AnyWhere WorkStation.">
+<meta name="theme-color" content="#07090D">
+<meta property="og:type" content="website">
+<meta property="og:title" content="常见问题 · AnyWhere WorkStation">
+<meta property="og:description" content="关于 AnyWhere WorkStation 的常见问题。">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/sora-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script>
+/* 首屏前确定语言，避免闪烁：?lang= > 上次选择 > 浏览器语言。 */
+(function () {
+  var r = document.documentElement, l = null;
+  try { l = localStorage.getItem('aws-lang'); } catch (e) {}
+  var m = /[?&]lang=(zh|en)\b/.exec(location.search);
+  if (m) l = m[1];
+  if (l !== 'zh' && l !== 'en') l = /^zh/i.test(navigator.language || '') ? 'zh' : 'en';
+  r.setAttribute('data-lang', l);
+  r.lang = l === 'zh' ? 'zh-CN' : 'en';
+})();
+</script>
+</head>
+<body>
+<a class="skip" href="#main"><span lang="zh-CN">跳到正文</span><span lang="en">Skip to content</span></a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="./" aria-label="AnyWhere WorkStation"><svg class="brand-mark" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><rect x="20" y="20" width="472" height="472" rx="110" fill="#165ddd"/><rect x="119" y="133" width="274" height="213" rx="22" fill="none" stroke="#fff" stroke-width="23"/><path d="M229 138v204M195 394h122M256 350v42" fill="none" stroke="#fff" stroke-width="23" stroke-linecap="round"/><circle cx="167" cy="178" r="10" fill="#fff"/><path d="m265 204 24 23-24 23M304 251h38" fill="none" stroke="#fff" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">AnyWhere <span>WorkStation</span></span></a>
+    <nav class="nav-links" id="nav-links" data-label-zh="主导航" data-label-en="Main">
+      <a href="./"><span lang="zh-CN">首页</span><span lang="en">Home</span></a>
+      <a href="./#compare"><span lang="zh-CN">对比</span><span lang="en">Compare</span></a>
+      <a href="pricing.html"><span lang="zh-CN">定价</span><span lang="en">Pricing</span></a>
+      <a href="download.html"><span lang="zh-CN">下载</span><span lang="en">Download</span></a>
+      <a href="faq.html" aria-current="page"><span lang="zh-CN">常见问题</span><span lang="en">FAQ</span></a>
+      <a href="docs/"><span lang="zh-CN">使用手册</span><span lang="en">Docs</span></a>
+    </nav>
+    <div class="nav-tools">
+      <div class="lang-switch" role="group" aria-label="语言 / Language">
+        <button type="button" data-set-lang="zh" aria-pressed="true" lang="zh">中文</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn-primary btn-sm nav-cta" href="pricing.html"><span lang="zh-CN">立即购买</span><span lang="en">Buy now</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" data-label-zh="打开菜单" data-label-en="Open menu"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="wrap">
+      <span class="eyebrow"><span lang="zh-CN">常见问题</span><span lang="en">FAQ</span></span>
+      <h1><span lang="zh-CN">你可能想知道</span><span lang="en">Things you might ask</span></h1>
+    </div>
+  </section>
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="faq"><details class="qa" open><summary><span><span lang="zh-CN">AnyWhere WorkStation 是什么？</span><span lang="en">What is AnyWhere WorkStation?</span></span><span class="pm" aria-hidden="true"></span></summary><p class="ans"><span lang="zh-CN">一款 Mac 应用。它在你的 Mac 里为 Claude 准备一个独立、私密的工作空间，Claude 可以在里面放心地写代码、查资料、跑任务。</span><span lang="en">A Mac app that gives Claude a private workspace of its own inside your Mac, where it can code, research and run tasks with peace of mind.</span></p></details><details class="qa"><summary><span><span lang="zh-CN">为什么不直接在 Mac 上用 Claude？</span><span lang="en">Why not just run Claude on my Mac?</span></span><span class="pm" aria-hidden="true"></span></summary><p class="ans"><span lang="zh-CN">Claude 工作时会执行命令、安装工具、改动文件。放进独立空间后，这些操作都发生在里面，不会弄乱你的电脑，也碰不到你的个人资料。</span><span lang="en">As Claude works, it runs commands, installs tools and changes files. In a separate space all of that happens inside, so your computer stays tidy and your personal files stay out of reach.</span></p></details><details class="qa"><summary><span><span lang="zh-CN">和云电脑相比有什么不同？</span><span lang="en">How is this different from a cloud PC?</span></span><span class="pm" aria-hidden="true"></span></summary><p class="ans"><span lang="zh-CN">云电脑运行在别人的机房，每月通常 ¥250 起，网络一不稳就可能掉线，文件也存在服务商那里。AnyWhere WorkStation 就在你自己的 Mac 上，每月 ¥69，不怕掉线和服务商停服，文件始终在你手里。</span><span lang="en">A cloud PC runs in someone else's data center, usually from $35 a month. A shaky connection can drop you, and your files sit with the provider. AnyWhere WorkStation runs on your own Mac for $10 a month, with no dropouts or provider shutdowns to worry about, and your files always stay with you.</span></p></details><details class="qa"><summary><span><span lang="zh-CN">Claude 能看到我的个人文件吗？</span><span lang="en">Can Claude see my personal files?</span></span><span class="pm" aria-hidden="true"></span></summary><p class="ans"><span lang="zh-CN">看不到。Claude 在自己的空间里工作，你的个人文件留在门外。需要它处理某份资料时，由你亲手交给它。</span><span lang="en">No. Claude works in its own space and your personal files stay outside. When you want it to work on something, you hand it over yourself.</span></p></details><details class="qa"><summary><span><span lang="zh-CN">价格包含 Claude 订阅吗？</span><span lang="en">Does the price include a Claude subscription?</span></span><span class="pm" aria-hidden="true"></span></summary><p class="ans"><span lang="zh-CN">不包含。Claude 需要你自己的 Anthropic 账号。</span><span lang="en">No. Claude needs your own Anthropic account.</span></p></details><details class="qa"><summary><span><span lang="zh-CN">支持哪些 Mac？</span><span lang="en">Which Macs are supported?</span></span><span class="pm" aria-hidden="true"></span></summary><p class="ans"><span lang="zh-CN">搭载 Apple Silicon 芯片、运行 macOS 15 或更新版本的 Mac。</span><span lang="en">Macs with Apple silicon running macOS 15 or later.</span></p></details><details class="qa"><summary><span><span lang="zh-CN">月付、年付和永久授权有什么区别？</span><span lang="en">How do monthly, yearly and lifetime differ?</span></span><span class="pm" aria-hidden="true"></span></summary><p class="ans"><span lang="zh-CN">功能完全一样，只是付费方式不同。月付 ¥69；年付 ¥699，比按月付一年省 ¥129；永久授权 ¥999，一次付费，之后不用再续费。</span><span lang="en">Features are exactly the same; only the way you pay differs. Monthly is $10. Yearly is $100, saving $20 over paying monthly. A lifetime license is a one-time $150 with no renewals.</span></p></details><details class="qa"><summary><span><span lang="zh-CN">出了问题怎么办？</span><span lang="en">What if something goes wrong?</span></span><span class="pm" aria-hidden="true"></span></summary><p class="ans"><span lang="zh-CN">工作空间可以一键备份，也能一键恢复到之前的状态。</span><span lang="en">Back up your workspace in one click, and restore it to an earlier state just as easily.</span></p></details><details class="qa"><summary><span><span lang="zh-CN">订阅到期后，我的资料还在吗？</span><span lang="en">Is my data still there when my subscription ends?</span></span><span class="pm" aria-hidden="true"></span></summary><p class="ans"><span lang="zh-CN">在。工作空间保存在你自己的 Mac 上，到期后你仍然可以取回里面的文件。</span><span lang="en">Yes. Workspaces live on your own Mac, and you can still get your files out after the subscription ends.</span></p></details></div>
+    </div>
+  </section>
+  <section class="cta-wrap" style="padding-top:2rem">
+    <div class="wrap">
+      <div class="cta" data-reveal>
+        <div class="peek"><svg class="mm" viewBox="0 -10 120 124" aria-hidden="true" focusable="false" data-look=""><path class="mm-ant" d="M58 24 Q54 11 46 6"/><path class="mm-spark" d="M44 -7 L47.4 2.6 L57 6 L47.4 9.4 L44 19 L40.6 9.4 L31 6 L40.6 2.6 Z"/><rect class="mm-body" x="10" y="22" width="100" height="88" rx="40"/><g class="mm-look"><g class="mm-eyes"><rect class="mm-eye" x="36" y="50" width="12" height="17" rx="6"/><rect class="mm-eye" x="72" y="50" width="12" height="17" rx="6"/><circle class="mm-hi" cx="44" cy="55" r="2.3"/><circle class="mm-hi" cx="80" cy="55" r="2.3"/></g><ellipse class="mm-cheek" cx="29" cy="77" rx="8" ry="5"/><ellipse class="mm-cheek" cx="91" cy="77" rx="8" ry="5"/><path class="mm-mouth" d="M52 77 Q60 85 68 77"/></g><rect class="mm-body" x="18" y="98" width="26" height="14" rx="7"/><rect class="mm-body" x="76" y="98" width="26" height="14" rx="7"/></svg></div>
+        <h2><span lang="zh-CN">准备好了？</span><span lang="en">Ready?</span></h2>
+        <p class="price-line"><span lang="zh-CN"><b>¥69</b> / 月 · <b>¥699</b> / 年 · <b>¥999</b> 永久授权</span><span lang="en"><b>$10</b> / month · <b>$100</b> / year · <b>$150</b> lifetime</span></p>
+        <div class="cta-actions">
+          <a class="btn btn-primary btn-lg" href="download.html"><span lang="zh-CN">下载 Mac 版</span><span lang="en">Download for Mac</span></a>
+          <a class="btn btn-ghost btn-lg" href="pricing.html"><span lang="zh-CN">查看价格</span><span lang="en">See pricing</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="./"><svg class="brand-mark" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><rect x="20" y="20" width="472" height="472" rx="110" fill="#165ddd"/><rect x="119" y="133" width="274" height="213" rx="22" fill="none" stroke="#fff" stroke-width="23"/><path d="M229 138v204M195 394h122M256 350v42" fill="none" stroke="#fff" stroke-width="23" stroke-linecap="round"/><circle cx="167" cy="178" r="10" fill="#fff"/><path d="m265 204 24 23-24 23M304 251h38" fill="none" stroke="#fff" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">AnyWhere <span>WorkStation</span></span></a>
+        <p><span lang="zh-CN">给 Claude 一个干净的专属空间。</span><span lang="en">A clean space of its own, for Claude.</span></p>
+      </div>
+      <div>
+        <h4><span lang="zh-CN">产品</span><span lang="en">Product</span></h4>
+        <ul>
+          <li><a href="./"><span lang="zh-CN">首页</span><span lang="en">Home</span></a></li>
+          <li><a href="./#compare"><span lang="zh-CN">对比云电脑</span><span lang="en">Versus cloud PCs</span></a></li>
+          <li><a href="pricing.html"><span lang="zh-CN">定价</span><span lang="en">Pricing</span></a></li>
+          <li><a href="download.html"><span lang="zh-CN">下载</span><span lang="en">Download</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4><span lang="zh-CN">帮助</span><span lang="en">Help</span></h4>
+        <ul>
+          <li><a href="faq.html"><span lang="zh-CN">常见问题</span><span lang="en">FAQ</span></a></li>
+          <li><a href="docs/"><span lang="zh-CN">使用手册</span><span lang="en">User guide</span></a></li>
+          <li><a href="download.html"><span lang="zh-CN">开始使用</span><span lang="en">Get started</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>© 2026 AnyWhere WorkStation</span>
+      <span><span lang="zh-CN">Claude 是 Anthropic, PBC 的商标。AnyWhere WorkStation 是独立产品，与 Anthropic 没有隶属关系。</span><span lang="en">Claude is a trademark of Anthropic, PBC. AnyWhere WorkStation is an independent product and is not affiliated with Anthropic.</span></span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

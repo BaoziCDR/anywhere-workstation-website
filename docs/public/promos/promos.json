@@ -1,0 +1,18 @@
+[
+  {
+    "id": "example-pro",
+    "title": "示例：AnyWhere WorkStation 专业版",
+    "description": "示例推广文案，替换为自家产品的一句话卖点。",
+    "image": "/promos/example.svg",
+    "link": "https://example.com/pro",
+    "cta": "立即了解",
+    "weight": 2
+  },
+  {
+    "id": "example-footer-only",
+    "title": "示例：只在正文末尾投放的推广",
+    "description": "placements 只填 footer 时，宽屏右侧栏不显示这一条。",
+    "link": "https://example.com/footer",
+    "placements": ["footer"]
+  }
+]

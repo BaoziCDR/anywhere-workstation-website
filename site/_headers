@@ -1,0 +1,9 @@
+# 官网资源文件名不带哈希，缓存时间要短（Cloudflare 会合并同时匹配的多条规则，所以不再单独给字体设长缓存）；手册构建产物带哈希，可以长期缓存
+/assets/*
+  Cache-Control: public, max-age=3600
+
+/docs/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/docs/promos/*
+  Cache-Control: public, max-age=300
