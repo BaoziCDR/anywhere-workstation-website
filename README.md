@@ -26,7 +26,7 @@ npm run preview   # 预览 dist/，默认 http://localhost:4173/，PORT 可改�
 
 - 每段文案中英两份并列（`lang="zh-CN"` / `lang="en"`），`assets/js/site.js` 按 `?lang=`、上次选择、浏览器语言切换。
 - 页内链接用相对路径；`404.html` 可能出现在任意子路径下，所以用根绝对路径。
-- Logo 和 favicon 使用软件图标（同 AnyWhere-WorkStation 仓库 `apps/desktop/src-tauri/icons/icon.svg`）。
+- Logo 和 favicon 与软件图标同一图形（AnyWhere-WorkStation 仓库 `apps/desktop/src-tauri/icons/icon.svg`），底色换成保险箱外壳的钢铁灰，显示器线条浅灰白，终端符号用官网强调色橙色，以融入官网深色配色。
 - Sora 标题字体站内托管在 `assets/fonts/`（来自 `@fontsource-variable/sora` 5.3.0，SIL OFL 1.1，见 `OFL.txt`），不依赖 Google Fonts。
 - 页头导航和页脚“帮助”中有“使用手册”入口，指向 `docs/`。
 - `site/` 下不能建 `docs/` 目录，会和手册输出冲突，构建脚本会报错。
