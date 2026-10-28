@@ -68,7 +68,7 @@
     revealEls.forEach(function (el) { if (!el.classList.contains('in')) io.observe(el); });
   }
 
-  /* ---------- 主视觉：暖光里的微尘 ---------- */
+  /* ---------- 主视觉：蓝光里的微尘 ---------- */
   var canvas = document.querySelector('.hero-dust');
   if (canvas && canvas.getContext) {
     var ctx = canvas.getContext('2d');
@@ -104,7 +104,7 @@
         }
         var dx = (p.x - W / 2) / (W / 2), fade = Math.max(0, 1 - dx * dx);
         ctx.globalAlpha = p.a * (0.5 + 0.5 * Math.sin(p.t * 3)) * fade;
-        ctx.fillStyle = p.r > 1.6 ? '#FFC6A3' : '#FF9B6E';
+        ctx.fillStyle = p.r > 1.6 ? '#CFE0FF' : '#6FA6FF';
         ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fill();
       }
       if (running && !reduce) requestAnimationFrame(draw);
