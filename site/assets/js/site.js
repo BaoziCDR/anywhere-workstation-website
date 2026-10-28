@@ -1,6 +1,6 @@
 /* AnyWhere WorkStation · 站点脚本
    语言：每段文案在页面里并列中英两份（lang="zh-CN" / lang="en"），这里切换 html[data-lang]，并同步标题、描述和 aria-label。
-   其余是动效：顶栏、滚动浮现、主视觉微尘、卡片光晕、运行计时、任务演示、定价切换、眼睛跟随。 */
+   其余是动效：顶栏、滚动浮现、主视觉微尘、卡片光晕、运行计时、任务演示、眼睛跟随。 */
 (function () {
   var root = document.documentElement;
   var KEY = 'aws-lang';
@@ -160,32 +160,6 @@
         render();
       }, 1500);
     }
-  }
-
-  /* ---------- 定价：月付 / 年付 / 永久授权 ---------- */
-  var billing = document.querySelector('.billing');
-  var plan = document.querySelector('.plan');
-  if (billing && plan) {
-    var btns = billing.querySelectorAll('[data-plan-btn]');
-    // 按钮宽度随语言变化，滑块按当前选中按钮的实际位置和宽度摆放
-    var place = function () {
-      var on = billing.querySelector('[aria-pressed="true"]');
-      if (!on) return;
-      billing.style.setProperty('--sw', on.offsetWidth + 'px');
-      billing.style.setProperty('--sx', (on.offsetLeft - 4) + 'px');
-    };
-    btns.forEach(function (b) {
-      b.addEventListener('click', function () {
-        var v = b.getAttribute('data-plan-btn');
-        billing.setAttribute('data-plan', v);
-        plan.setAttribute('data-plan', v);
-        btns.forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
-        place();
-      });
-    });
-    place();
-    if ('ResizeObserver' in window) new ResizeObserver(place).observe(billing);
-    else window.addEventListener('resize', place);
   }
 
   /* ---------- 小形象的眼睛跟着鼠标 ---------- */
