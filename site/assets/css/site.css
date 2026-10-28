@@ -857,7 +857,8 @@ main, .site-footer { position: relative; z-index: 1; }
 .cmp-bar i { display: block; height: 100%; border-radius: inherit; transition: width 1.4s var(--ease-out) 0.35s; }
 .cmp-bar.us i { width: 6.6%; background: linear-gradient(90deg, #FF9A6C, #FF7A45); box-shadow: 0 0 14px rgba(255, 130, 80, 0.7); }
 .cmp-bar.them i { width: 100%; background: #4A5765; }
-.reveal-on .cmp-row:not(.in) .cmp-bar i { width: 0; }
+/* 整张对比表一起浮现（高亮列由各行单元格拼成，逐行浮现会断成一节一节），价格条随后增长 */
+.reveal-on .cmp:not(.in) .cmp-bar i { width: 0; }
 .cmp-note { text-align: center; margin-top: 1.6rem; font-size: 0.82rem; color: var(--ink-3); }
 @media (hover: hover) {
   .cmp-row:not(.cmp-head):hover .cmp-label, .cmp-row:not(.cmp-head):hover .cmp-cell.them { color: var(--ink); }
